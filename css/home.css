@@ -91,6 +91,7 @@ nav {
     border: none;
     padding: 10px 20px;
     cursor: pointer;
+    
 }
 
 .btn-signup {
@@ -132,13 +133,24 @@ nav {
     gap: 10px;
 }
 
-.btn-get-started, .btn-watch-video {
+.btn-get-started {
     background-color: #6366F1;
     color: #fff;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
+    border-radius: 60px;
 }
+
+.btn-watch-video{
+    
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 300px;
+}
+
 
 .btn-watch-video {
     background-color: #00C48C;
@@ -164,7 +176,7 @@ nav {
     z-index: 0;
 }
 
-.pattern1, .hand-image, .pattern2 {
+.pattern1, .hand-image, .pattern2, .pattern3 {
     position: absolute;
 }
 
@@ -186,9 +198,15 @@ nav {
     width: 50px;
 }
 
+.pattern3 {
+    top: 14%;
+    right: 0;
+    width: 60px;
+}
+
 /* Trusted by section styling */
 .trusted-by {
-    background-color: #fff;
+    background-color: #e6e1e1;
     padding: 40px 0;
     text-align: center;
 }
