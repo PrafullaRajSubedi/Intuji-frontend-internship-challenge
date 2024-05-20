@@ -621,33 +621,81 @@ body {
 }
 
 .blog h2 {
-    text-align: center;
-    margin-bottom: 40px;
+    text-align: left;
+    font-size: 2em;
+    margin-bottom: 20px;
 }
 
 .blog-grid {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .blog-item {
-    width: 30%;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1 1 30%;
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+    gap: 40px;
 }
 
 .blog-item img {
     width: 100%;
     height: auto;
-    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.blog-item .blog-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .blog-item h3 {
-    margin-bottom: 10px;
+    margin: 10px 0;
+    font-size: 0.9em;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .blog-item p {
-    color: #5c5c5c;
+    font-size: 1.1em;
+    margin: 10px 0;
 }
+
+.blog-item a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+.blog-item.reverse {
+    flex-direction: row-reverse;
+}
+
+.blog-item.reverse img {
+    width: 50%;
+    height: auto;
+    margin-left: 20px;
+    border-radius: 10px;
+}
+
+.blog-item.reverse .blog-text {
+    width: 50%;
+}
+
+
 
 /* FAQ section styling */
 .faq {
@@ -655,9 +703,10 @@ body {
     padding: 40px 0;
 }
 
-.faq h2 {
-    text-align: center;
+.faq h1 {
+    text-align: left;
     margin-bottom: 40px;
+    font-size: 1.8em;
 }
 
 .faq-grid {
@@ -681,21 +730,24 @@ body {
     color: #5c5c5c;
 }
 
-/* Call to action section styling */
-.cta {
-    background-color: #00796b;
+/* Discover styling */
+.discover {
+    background-color: #002679;
     color: #ffffff;
     text-align: center;
-    padding: 40px 0;
+    padding: 40px;
+    margin: 5%;
+    border-radius: 40px;
 }
 
-.cta h2 {
+.discover h1 {
+    font-size: 2.9em;
     margin-bottom: 20px;
 }
 
-.btn-cta {
-    background-color: #ffffff;
-    color: #00796b;
+.btn-log {
+    background-color: #f87118;
+    color: #ffffff;
     border: none;
     padding: 10px 20px;
     font-size: 1em;
@@ -703,7 +755,7 @@ body {
     transition: background-color 0.3s;
 }
 
-.btn-cta:hover {
+.btn-log:hover {
     background-color: #004d40;
     color: #ffffff;
 }
